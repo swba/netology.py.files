@@ -74,3 +74,12 @@ class TestCookbook:
             'Чеснок': {'measure': 'зубч', 'quantity': 6},
             'Яйцо': {'measure': 'шт', 'quantity': 4},
         }
+        assert cookbook.get_shopping_list(['Омлет', 'Фахитос'], 3) == {
+            'Винный уксус': {'measure': 'ст.л', 'quantity': 3},
+            'Говядина': {'measure': 'г', 'quantity': 1500},
+            'Лаваш': {'measure': 'шт', 'quantity': 6},
+            'Молоко': {'measure': 'мл', 'quantity': 300},
+            'Перец сладкий': {'measure': 'шт', 'quantity': 3},
+            'Помидор': {'measure': 'шт', 'quantity': 12},
+            'Яйцо': {'measure': 'шт', 'quantity': 6},
+        }
