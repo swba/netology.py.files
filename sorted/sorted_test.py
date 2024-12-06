@@ -1,5 +1,5 @@
-from sorted import sort_files
 from os import getcwd, path
+from sorted import sort_files
 
 def test_sort_files():
     # Create a file.
